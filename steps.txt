@@ -1,0 +1,5 @@
+here first we use shadcn and install next js all dependencies from the
+website of shadcn now also use command to create a button
+
+use cg=hart js and react-counter
+
