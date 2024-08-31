@@ -48,7 +48,7 @@ export const signIn = async ({ email, password }: signInProps) => {
 
     return parseStringify(user);
   } catch (error) {
-    console.error('Error', error);
+    console.error('Error', error); 
   }
 }
 

@@ -7,6 +7,7 @@ declare type SearchParamProps = {
 
 // ========================================
 
+// ? for optional
 declare type SignUpParams = {
   firstName: string;
   lastName: string;
