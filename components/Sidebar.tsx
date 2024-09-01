@@ -5,9 +5,10 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Footer from './Footer'
+import PlaidLink from './PlaidLink'
 
 const Sidebar = ({ user }: SiderbarProps) => {
-
   const pathname = usePathname();
 
   return (
@@ -15,10 +16,10 @@ const Sidebar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
           <Image 
-            src="@/public/icons/logo.svg"
+            src="/icons/logo.svg"
             width={34}
             height={34}
-            alt="VaultX logo"
+            alt="Horizon logo"
             className="size-[24px] max-xl:size-14"
           />
           <h1 className="sidebar-logo">Horizon</h1>
@@ -48,7 +49,10 @@ const Sidebar = ({ user }: SiderbarProps) => {
           )
         })}
         
+        <PlaidLink user={user} />
       </nav>
+
+      <Footer user={user} />
     </section>
   )
 }
